@@ -111,31 +111,33 @@
 <p>Core Gallery is $2.99 with no trial. App purchases are completed or facilitated through the Google Play store. Google Play processes the payment and decides refunds. The purchase stays associated with the Google Account that bought it. Core does not receive card details, and Core does not issue a separate license transferable to another person. The app has no in-app purchases.</p>
 <p>---</p>
 <h2>5. Core Workout</h2>
-<p>Core Workout is a paid exercise timer for Android. It runs timers on the device for formats such as EMOM, AMRAP, Interval, Custom, and chained workouts. No account is required. The app does not request Android&#x27;s internet permission, so Core Workout cannot connect to the internet. Voice cues and workouts stay on the phone.</p>
-<h3>No internet</h3>
-<p>Core Workout does not request the internet permission. Your workouts are not uploaded anywhere by Core Workout, and timers do not need a network connection.</p>
+<p>Core Workout is a paid exercise interval timer for Android. It runs timers on the device for formats such as EMOM, AMRAP, Interval, Tabata, For Time, HIIT, Custom, Favorites, and chained workouts. No account is required. Voice cues and workouts stay on the phone. Timing a workout does not require a network connection.</p>
+<h3>Network</h3>
+<p>Core Workout requests internet access only so Google Play Billing can complete or refresh a one-time unlock. Workouts, cues, and timers are not uploaded. After an unlock is stored on the device, you can time workouts offline. Core Workout has no crash-reporting SDK and no analytics.</p>
 <h3>What stays on your device</h3>
 <ul>
 <li>Your settings (volume, voice, vibration, keep-screen-on, and related options).</li>
 <li>Saved workouts, presets you hide or copy, unfinished custom starts kept for later save, and chained workouts.</li>
 <li>Built-in voice cue files that ship inside the app.</li>
-<li>This data is kept in the app&#x27;s private storage. Android backup is turned off for Core Workout, so this data is not copied to your Google backup.</li>
+<li>A local record of whether the one-time unlock is active.</li>
+<li>This data is kept in the app&#x27;s private storage. Android backup is turned on for Core Workout. Android Auto Backup can include settings and saved workouts. Google runs that backup, not Core. You can turn it off in Android&#x27;s backup settings.</li>
 </ul>
 <h3>Backup and restore</h3>
 <p>Optional Backup and Restore use Android&#x27;s system save and open sheets. Backup writes a <code>CoreWorkout-backup.json</code> file you choose a location for. Restore reads a file you pick and merges saved workouts by id. Core does not upload that file. A file that is not a Core Workout backup changes nothing.</p>
 <h3>What leaves your device</h3>
-<p>Only what you send yourself. Opening the privacy-policy link opens your browser. A backup file you save can leave the phone if you copy or share that file yourself. Core Workout has no crash-reporting SDK and no analytics.</p>
+<p>Opening the privacy-policy link opens your browser. A backup file you save can leave the phone if you copy or share that file yourself. Purchase and license checks go through Google Play when a network is available. Core Workout does not send workouts or voice cues to Core.</p>
 <h3>Third parties</h3>
-<p>None are contacted by Core Workout. When the app is sold on Google Play, Google Play handles the purchase.</p>
+<p>Google Play Billing handles the one-time purchase and related license checks. Core does not contact other third parties from Core Workout.</p>
 <h3>Permissions</h3>
 <ul>
+<li><strong>Internet and network state:</strong> only for Google Play Billing unlock and license refresh.</li>
 <li><strong>Notifications and foreground service:</strong> so the timer can keep running with the screen off and show pause, resume, skip, and stop controls.</li>
 <li><strong>Vibration:</strong> optional cues you can turn off.</li>
 <li><strong>Wake lock:</strong> to keep the timer deadline accurate while the screen is off.</li>
 <li><strong>Battery optimization exemption (asked, optional):</strong> so the system is less likely to stop a running timer. The app opens the system settings list; you decide.</li>
 </ul>
 <h3>Purchases</h3>
-<p>Core Workout is planned as a $4.99 one-time unlock through Google Play, with no trial in the current product decision. App purchases are completed or facilitated through the Google Play Store. Google Play processes the payment and decides refunds. The purchase stays associated with the Google Account that bought it. Core does not receive card details, and Core does not issue a separate license transferable to another person. If the billing model later changes to a subscription or trial, this section and the effective date will be updated before that change ships.</p>
+<p>Core Workout is a $5.99 one-time unlock through Google Play, with no trial. App purchases are completed or facilitated through the Google Play Store. Google Play processes the payment and decides refunds. The purchase stays associated with the Google Account that bought it. Core does not receive card details, and Core does not issue a separate license transferable to another person.</p>
 
 <h2>6. Children</h2>
 <p>Core apps are general-audience utilities. They are not made for children, and they have no accounts, profiles, chat, or social features. Core does not knowingly collect personal information from children. If you think a child has sent us personal information, for example in an email, contact us and we will delete it.</p>
