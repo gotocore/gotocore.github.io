@@ -1,12 +1,13 @@
 <!DOCTYPE html><html lang='en'><head><meta charset='utf-8'><meta name='viewport' content='width=device-width,initial-scale=1'><title>Core Privacy Policy</title><style>body{font-family:system-ui,sans-serif;max-width:42rem;margin:2rem auto;padding:0 1rem;line-height:1.5;color:#111}h1{font-size:1.6rem}h2{margin-top:2rem;font-size:1.2rem}li{margin:.25rem 0}</style></head><body>
 <h1>Core Privacy Policy</h1>
 <p>private. essential. Core...</p>
+<p>Go-to Android apps. No&nbsp;ads. No&nbsp;tracking. No&nbsp;accounts. No&nbsp;AI inside.</p>
 <p><strong>Operator:</strong> Core Products &amp; Services, LLC</p>
 <p><strong>Contact:</strong> gotocorepstx@gmail.com</p>
-<p><strong>Effective date:</strong> October 5, 2026</p>
-<p><strong>Applies to:</strong> Core Weather, Core Music, Core Gallery, and Core Workout for Android</p>
+<p><strong>Effective date:</strong> October 11, 2026</p>
+<p><strong>Applies to:</strong> Core Weather, Core Music, Core Gallery, Core Workout, and Core Sign for Android. Core Notes is not yet released; its section below describes the app as planned.</p>
 <h2>1. What privacy means</h2>
-<p>Privacy, as used in this policy, refers to the practices Core Products &amp; Services, LLC does not undertake. There are no third-party ads, no tracking or analytics, no profiles, no cloud, no Core servers, no social features, and no AI. Core does not encrypt files except the Gallery vault. Core does not operate an anonymizing service. When Core Weather obtains a place through Detect, coordinates are rounded to approximately 0.01° before the forecast request is sent.</p>
+<p>Privacy, as used in this policy, refers to the practices Core Products &amp; Services, LLC does not undertake. There are no third-party ads, no tracking or analytics, no profiles, no cloud, no Core servers, no social features, and No&nbsp;AI inside. Core does not encrypt files except the Core Gallery vault and the Core Sign vault. Core Notes, when released, will encrypt all notes. Core does not operate an anonymizing service. When Core Weather obtains a place through Detect, coordinates are rounded to approximately 0.01° before the forecast request is sent.</p>
 <h2>2. Core Weather</h2>
 <p>Core Weather is provided free of charge. It shows Dual °F/°C for a place entered by the user, or for the device location only if Detect is chosen. Detect is one-shot and opt-in. It is not continuous tracking, and it is not saved as a profile. Core Weather requires a connection for the forecast, place search, and alerts.</p>
 <h3>What stays on your device</h3>
@@ -19,15 +20,15 @@
 <h3>What leaves your device</h3>
 <p>Core Weather needs the internet. All requests use HTTPS. Every request goes straight from your phone to the service, so that service sees your <strong>IP address</strong>. Requests also carry a User-Agent label that names Core Weather.</p>
 <ul>
-<li><strong>Place lookup (when you type a place):</strong> the city or postal code you type is sent as you typed it. We cannot round a typed place name. Services used: Zippopotam.us (5-digit U.S. ZIP codes), Open-Meteo Geocoding, Nominatim (OpenStreetMap), and the U.S. Census Geocoder (backup for ZIP codes only).</li>
-<li><strong>Detect location (optional):</strong> the app asks Android for your location one time, only when you tap Detect location. Before any network request, it rounds the coordinates to 2 decimal places (about 0.01°, roughly 0.5–1.1 km). The rounded point goes to Nominatim (OpenStreetMap) to find the place name, with BigDataCloud as a backup. Then Detect location turns itself off. The app keeps the place it found, not a live location.</li>
-<li><strong>Forecasts:</strong> rounded coordinates go to Open-Meteo.</li>
+<li><strong>Place lookup (when you type a place):</strong> the city or postal code you type is sent as you typed it. We cannot round a typed place name. Services used: Nominatim (OpenStreetMap), Zippopotam.us (5-digit U.S. ZIP codes), and the U.S. Census Geocoder (backup for ZIP codes only). Place search runs only when you search; it is never repeated in the background.</li>
+<li><strong>Detect location (optional):</strong> the app asks Android for your location one time, only when you tap Detect location. Before any network request, it rounds the coordinates to 2 decimal places (about 0.01°, roughly 0.5–1.1 km). The rounded point goes to Nominatim (OpenStreetMap) to find the place name. If no name is found, the place is saved as &quot;Home&quot; with the rounded coordinates. Then Detect location turns itself off. The app keeps the place it found, not a live location.</li>
+<li><strong>Forecasts:</strong> rounded coordinates go to MET Norway (the Norwegian Meteorological Institute, api.met.no). MET Norway logs the IP address and the requested coordinates on its servers in Oslo, Norway.</li>
 <li><strong>U.S. observations and severe alerts:</strong> for U.S. places, rounded coordinates also go to the U.S. National Weather Service (api.weather.gov). Outside the U.S., NWS is not contacted.</li>
-<li><strong>Background refresh:</strong> while you have a saved place, Core Weather refreshes on a schedule (about every 15 minutes or longer, only when you have a network connection). It also schedules a refresh after your phone restarts. Each refresh sends your saved place to the services above again. Background refresh never turns on GPS.</li>
+<li><strong>Background refresh:</strong> while you have a saved place, Core Weather refreshes about every hour by default. You can change this to every 30 minutes, 1 hour, or 3 hours in Settings. Refreshes run only when you have a network connection. For U.S. places with alerts turned on, a separate alerts-only check runs about every 15 minutes; it does not run when alerts are off. Outside the U.S., background refresh runs only while a Core Weather widget is on your home screen; otherwise the forecast updates when you open the app. Opening the app fetches new data only if the last forecast is more than 10 minutes old. Each refresh sends the saved rounded coordinates to the forecast and alert services above, never your typed place name, and it never repeats a place search. Background refresh never turns on GPS. Widgets redraw from the saved forecast without a network request.</li>
 <li><strong>Links you tap:</strong> &quot;More on this warning&quot; and similar links open forecast.weather.gov or Windy.com in your browser, with rounded coordinates or your ZIP code in the address. That website&#x27;s own policy applies.</li>
 </ul>
 <h3>Third parties</h3>
-<p>Open-Meteo, Nominatim / OpenStreetMap, Zippopotam.us, U.S. Census Geocoder, BigDataCloud, U.S. National Weather Service, plus forecast.weather.gov or Windy.com only when you tap a link. Core has no control over their logs.</p>
+<p>MET Norway, Nominatim / OpenStreetMap, Zippopotam.us, U.S. Census Geocoder, U.S. National Weather Service, plus forecast.weather.gov or Windy.com only when you tap a link. Core has no control over their logs.</p>
 <h3>Permissions</h3>
 <ul>
 <li><strong>Internet:</strong> to get forecasts and place data.</li>
@@ -39,7 +40,7 @@
 <p>None. Core Weather is free and has no in-app purchases.</p>
 <p>---</p>
 <h2>3. Core Music</h2>
-<p>Core Music is a mobile-first music library manager and HiFi player. Playback uses the files on your device. It does not stream, and it has no cloud library. No account is required. A network connection is not required.*</p>
+<p>Core Music is a mobile-first music library manager and HiFi player. Playback uses the files on your device. It does not stream, and it has no cloud library. No&nbsp;account is required. A network connection is not required.*</p>
 <h3>What stays on your device</h3>
 <ul>
 <li>Your library index (track list, tags, folders), playlists, ratings, hearts, play settings, and EQ, kept in the app&#x27;s private storage.</li>
@@ -50,11 +51,11 @@
 <h3>Android backup</h3>
 <p>Android backup is turned on for Core Music. Android Auto Backup can include Music settings, EQ, the library index, ratings, hearts, and cached art and waveforms. It does not include your music files. Google runs that backup, not Core. You can turn it off in Android&#x27;s backup settings.</p>
 <h3>What leaves your device</h3>
-<p>*A connection is optional, and only when you ask for missing artwork (iTunes, Qobuz, or Deezer) or missing lyrics (LRCLIB). Library and playback work offline. Core Music has no crash-reporting SDK and no update check. The crash-log email and the privacy-policy link open your email app and your browser. Nothing is sent until you send it.</p>
+<p>*A connection is optional. Core Music has two Network Features switches in Settings, Artwork lookup and Lyrics lookup. Both start off, and nothing is looked up until you turn one on. Library and playback work offline. Core Music has no crash-reporting SDK and no update check. The crash-log email and the privacy-policy link open your email app and your browser. Nothing is sent until you send it.</p>
 <p>Those lookups work like this:</p>
 <ul>
-<li><strong>Lyrics lookup:</strong> the track title, artist, and album (or the text you type) go to <strong>LRCLib</strong> (lrclib.net).</li>
-<li><strong>Album-art search:</strong> your search words go to <strong>iTunes Search (Apple)</strong>, <strong>Qobuz</strong>, and/or <strong>Deezer</strong>. The artwork you pick is then downloaded from that service&#x27;s image servers.</li>
+<li><strong>Lyrics lookup (off until you turn it on):</strong> the song title, artist, album, and length (or the text you type) go to <strong>LRCLIB</strong> (lrclib.net). You choose the lyrics before they are saved.</li>
+<li><strong>Artwork lookup (off until you turn it on):</strong> the album and artist names go to <strong>MusicBrainz</strong> (musicbrainz.org) to find the matching release, and the cover is then downloaded from the <strong>Cover Art Archive</strong> (coverartarchive.org). You choose the image before it is saved.</li>
 </ul>
 <p>These services see your IP address and the search words needed to find a match. Browsing and playing your library does not need these lookups.</p>
 <ul>
@@ -62,11 +63,11 @@
 <li><strong>Your phone&#x27;s media controls:</strong> like other music players, Core Music shares the current track&#x27;s title, artist, and artwork with Android&#x27;s media controls, the lock screen, and any connected devices you use, such as Bluetooth or Android Auto.</li>
 </ul>
 <h3>Third parties</h3>
-<p>LRCLib, Apple (iTunes Search), Qobuz, and Deezer, only when you start a lookup. Google Play handles purchases (see below).</p>
+<p>LRCLIB, MusicBrainz, and the Cover Art Archive, only when the matching switch is on and you start a lookup. Google Play handles purchases (see below).</p>
 <h3>Permissions</h3>
 <ul>
 <li><strong>Music and video files / storage, and folders you pick:</strong> to find and play your files. Core Music can only reach the folders you choose with Android&#x27;s folder picker.</li>
-<li><strong>Internet and network state:</strong> only for the optional lookups.</li>
+<li><strong>Internet and network state:</strong> only for the optional lookups and Google Play purchases.</li>
 <li><strong>Notifications and foreground services:</strong> for playback controls and library scanning.</li>
 <li><strong>Battery optimization exemption (asked, optional):</strong> so playback and scans aren&#x27;t stopped.</li>
 <li><strong>USB host (optional feature):</strong> for USB audio devices (DACs).</li>
@@ -76,13 +77,14 @@
 <p>---</p>
 <h2>4. Core Gallery</h2>
 <p>Core Gallery is a paid app ($2.99, no trial) for viewing and organizing photos and videos on the device. Its vault is encrypted. The rest of the app is not. It has no accounts and no network connection at all.</p>
-<h3>No internet</h3>
+<h3>No&nbsp;internet</h3>
 <p>Core Gallery does not request Android&#x27;s internet permission, so the app cannot connect to the internet. Your photos are not uploaded anywhere by Core Gallery, and editing and enhancing happen on the phone.</p>
 <h3>What stays on your device</h3>
 <ul>
 <li>Your settings: albums, groups, pins, hidden albums, sort and filter options, local favorites and tags, widget options, and app lock.</li>
 <li>Thumbnails and an image cache in the app&#x27;s cache.</li>
 <li>The apps you choose for &quot;open with&quot; or editing, so it can open them again next time.</li>
+<li>A crash log, kept in the app&#x27;s private storage (the last 5 crashes). It holds the error trace, the app version, the device model, and the Android version only; file names, paths, and photo locations are removed.</li>
 <li>Changes you choose to make, like edits, rotation, info/EXIF edits, and deletes, are saved to your own photo and video files through Android.</li>
 <li>Android backup is turned off for Core Gallery.</li>
 </ul>
@@ -98,7 +100,7 @@
 <li>An optional setting, <strong>Strip location when sharing</strong>, removes location data from photos before you share them. It is off by default and works on photos, not videos.</li>
 </ul>
 <h3>What leaves your device</h3>
-<p>Only what you send yourself. When you share, set a wallpaper, or open a photo or video in another app, Android sends that file to the app you pick. That app&#x27;s own privacy policy then applies.</p>
+<p>Only what you send yourself. The crash log stays on your phone unless you choose to send it: Settings › Privacy › Crash log opens Android&#x27;s share menu with our email address filled in, and nothing is sent unless you finish sending it. When you share, set a wallpaper, or open a photo or video in another app, Android sends that file to the app you pick. That app&#x27;s own privacy policy then applies.</p>
 <h3>Third parties</h3>
 <p>None are contacted by Core Gallery. Google Play handles the purchase.</p>
 <h3>Permissions</h3>
@@ -106,12 +108,14 @@
 <li><strong>Photos and videos (all or selected):</strong> to show your library.</li>
 <li><strong>Media location:</strong> to read location data stored in your photos (see above).</li>
 <li><strong>Set wallpaper:</strong> only when you choose to set one.</li>
+<li><strong>Folder access (optional):</strong> if you tap &quot;Allow Gallery to read this folder&quot; in Zips, Android&#x27;s folder picker lets Core Gallery read the zip files in the folder you choose.</li>
+<li><strong>Media management (optional):</strong> if you allow it in Android settings, Core Gallery can move, trash, or delete your photos and videos without asking each time. It only acts on files you choose in the app.</li>
 </ul>
 <h3>Purchases</h3>
 <p>Core Gallery is $2.99 with no trial. App purchases are completed or facilitated through the Google Play store. Google Play processes the payment and decides refunds. The purchase stays associated with the Google Account that bought it. Core does not receive card details, and Core does not issue a separate license transferable to another person. The app has no in-app purchases.</p>
 <p>---</p>
 <h2>5. Core Workout</h2>
-<p>Core Workout is a paid exercise interval timer for Android. It runs timers on the device for formats such as EMOM, AMRAP, Interval, Tabata, For Time, HIIT, Custom, Favorites, and chained workouts. No account is required. Voice cues and workouts stay on the phone. Timing a workout does not require a network connection.</p>
+<p>Core Workout is a paid exercise interval timer for Android. It runs timers on the device for formats such as EMOM, AMRAP, Interval, Tabata, For Time, HIIT, Custom, Favorites, and chained workouts. No&nbsp;account is required. Voice cues and workouts stay on the phone. Timing a workout does not require a network connection.</p>
 <h3>Network</h3>
 <p>Core Workout requests internet access only so Google Play Billing can complete or refresh a one-time unlock. Workouts, cues, and timers are not uploaded. After an unlock is stored on the device, you can time workouts offline. Core Workout has no crash-reporting SDK and no analytics.</p>
 <h3>What stays on your device</h3>
@@ -137,21 +141,79 @@
 <li><strong>Battery optimization exemption (asked, optional):</strong> so the system is less likely to stop a running timer. The app opens the system settings list; you decide.</li>
 </ul>
 <h3>Purchases</h3>
-<p>Core Workout offers a 14-day free trial, then a one-time $6.99 unlock through Google Play. There is no subscription. App purchases are completed or facilitated through the Google Play Store. Google Play processes the payment and decides refunds. The purchase stays associated with the Google Account that bought it. Core does not receive card details, and Core does not issue a separate license transferable to another person.</p>
+<p>Core Workout offers a 14-day free trial, then a one-time $4.99 unlock through Google Play. There is no subscription. App purchases are completed or facilitated through the Google Play Store. Google Play processes the payment and decides refunds. The purchase stays associated with the Google Account that bought it. Core does not receive card details, and Core does not issue a separate license transferable to another person.</p>
 
-<h2>6. Children</h2>
+<p>---</p>
+<h2>6. Core Sign</h2>
+<p>Core Sign is a PDF reader with fill and sign tools for Android. Reading, saving, sharing, exporting, printing, and splitting PDFs are free. No&nbsp;account is required. Its vault is encrypted. The rest of the app is not.</p>
+<h3>No&nbsp;internet</h3>
+<p>Core Sign does not request Android&#x27;s internet permission, so the app cannot connect to the internet. Your documents and signatures are not uploaded anywhere by Core Sign.</p>
+<h3>What stays on your device</h3>
+<ul>
+<li>Your settings, your saved signature and initials, and the documents you work on, kept in the app&#x27;s private storage.</li>
+<li>Android backup is turned off for Core Sign.</li>
+</ul>
+<h3>Vault</h3>
+<p>Your signatures, initials, and the documents you store in the <strong>Vault</strong> are encrypted with AES-256-GCM. The key stays in the Android keystore and is wrapped by a PIN or pattern you set. Storing a document in the vault stores a copy; your original file is not deleted. Documents you are working on outside the vault, and files you export, are not encrypted. Your PIN or pattern cannot be recovered. Repeated wrong attempts add a growing wait, up to 15 minutes.</p>
+<h3>What leaves your device</h3>
+<p>Only what you send yourself. When you share, export, or print, Android sends the file to the app or printer you pick, and that app&#x27;s own policy then applies.</p>
+<h3>Third parties</h3>
+<p>None are contacted by Core Sign. Google Play handles the purchase.</p>
+<h3>Permissions</h3>
+<p>No&nbsp;permissions to grant. Core Sign opens the PDFs and images you choose through Android. The only install-time permission is Google Play billing, used for the purchase.</p>
+<h3>Purchases</h3>
+<p>Core Sign has no trial. Filling, signing, markup, form filling, redaction, the vault, and merging need a $9.99 one-time purchase through Google Play. There is no subscription. Google Play processes the payment and decides refunds. The purchase stays associated with the Google Account that bought it. Core does not receive card details, and Core does not issue a separate license transferable to another person.</p>
+<p>---</p>
+<h2>7. Core Notes (coming soon, not yet released)</h2>
+<p>Core Notes is not yet available. This section describes the app as it is planned and will be confirmed when it is released. Core Notes is a notes app for Android with text, checklist, photo, drawing, and audio notes, reminders, and widgets. No&nbsp;account is required. Every note is encrypted on the device.</p>
+<h3>What stays on your device</h3>
+<ul>
+<li>Your notes, checklists, labels, colors, reminders, and settings, in an encrypted database in the app&#x27;s private storage.</li>
+<li>Photos, drawings, and audio recordings you add, as encrypted files in the app&#x27;s private storage.</li>
+<li>Reminder times (with no note text) in device storage, so reminders can fire while the app is locked. If you choose to show note titles in reminders, those titles are stored there too, unencrypted.</li>
+</ul>
+<h3>Encryption</h3>
+<ul>
+<li>The note database is encrypted with SQLCipher (AES-256), including the search index.</li>
+<li>Photos, drawings, and audio are encrypted with AES-256-GCM, including audio while it is recording.</li>
+<li>The key is created on your phone and protected by the Android keystore. With an app lock, it is also protected by your PIN or pattern, or a strong biometric. The key is never sent anywhere, and Core cannot recover it.</li>
+<li>Backups are encrypted files protected by a separate backup password (at least 8 characters, with letters and numbers) or a recovery code. If both are lost, the backup cannot be opened, by us or anyone.</li>
+<li>Widgets and reminder notifications hide note content while the app is locked.</li>
+<li>Not encrypted: notes you export as text, Markdown, PDF, or image files, anything you share to another app or copy to the clipboard, reminder times, and reminder titles if you turn them on.</li>
+</ul>
+<h3>What leaves your device</h3>
+<p>Only what you send yourself. Core Notes will not request Android&#x27;s internet permission, so the app cannot connect to the internet. It has no ads, analytics, or crash-reporting SDK. Backups and exports are saved where you choose with Android&#x27;s file picker. Sharing opens Android&#x27;s share screen, and the receiving app&#x27;s own policy then applies. Tapping a link opens your browser; Core Notes does not fetch link previews.</p>
+<h3>Third parties</h3>
+<p>None are contacted by Core Notes. Google Play handles the purchase.</p>
+<h3>Permissions (planned)</h3>
+<ul>
+<li><strong>Microphone:</strong> only when you record audio, asked the first time you tap record.</li>
+<li><strong>Notifications:</strong> asked the first time you set a reminder.</li>
+<li><strong>Alarms &amp; reminders (exact alarms):</strong> optional, only if you turn on exact reminder times.</li>
+<li><strong>Run at startup:</strong> to restore reminders after a restart.</li>
+<li><strong>Biometric:</strong> optional fingerprint unlock. Android checks the fingerprint on the phone; the app only receives a yes or no.</li>
+<li><strong>Photos:</strong> added with Android&#x27;s Photo Picker, which needs no storage permission. Core Notes sees only the photos you pick.</li>
+<li><strong>Google Play billing:</strong> for the purchase.</li>
+<li>Not requested: internet, location, contacts, camera, storage.</li>
+</ul>
+<h3>Purchases</h3>
+<p>Core Notes is planned as a $0.99 one-time purchase through Google Play, with no trial and no subscription. Google Play processes the payment and decides refunds. Core does not receive card details.</p>
+
+<h2>8. Children</h2>
 <p>Core apps are general-audience utilities. They are not made for children, and they have no accounts, profiles, chat, or social features. Core does not knowingly collect personal information from children. If you think a child has sent us personal information, for example in an email, contact us and we will delete it.</p>
-<h2>7. Your choices</h2>
+<h2>9. Your choices</h2>
 <ul>
 <li><strong>Weather:</strong> type a place instead of using Detect location, turn off location permission, or turn off alerts and notifications.</li>
-<li><strong>Music:</strong> do not use the lyrics or album-art lookups, do not send the crash log, or turn off Android backup.</li>
+<li><strong>Music:</strong> leave the Artwork lookup and Lyrics lookup switches off, do not send the crash log, or turn off Android backup.</li>
 <li><strong>Gallery:</strong> turn on &quot;Strip location when sharing,&quot; and use the app lock.</li>
 <li><strong>Workout:</strong> turn off vibration, lower or mute cue volume, or skip the optional battery-optimization exemption. Use Backup only if you want a file copy of saved workouts.</li>
-<li><strong>All apps:</strong> uninstalling an app or clearing its storage removes the data it keeps on your phone. Changes you saved to your own files stay. For Gallery, Vault contents are deleted.</li>
+<li><strong>Sign:</strong> keep signatures and sensitive documents in the Vault, and remember that exported files are not encrypted.</li>
+<li><strong>Gallery crash log:</strong> do not send it, or send it only when you choose.</li>
+<li><strong>All apps:</strong> uninstalling an app or clearing its storage removes the data it keeps on your phone. Changes you saved to your own files stay. For Gallery and Sign, Vault contents are deleted.</li>
 <li><strong>Questions or requests:</strong> email gotocorepstx@gmail.com. Core keeps nothing about you on its own servers, so most questions are about what is stored on your phone.</li>
 </ul>
-<h2>8. Changes to this policy</h2>
+<h2>10. Changes to this policy</h2>
 <p>If an application&#x27;s behavior changes, this policy and the effective date at the top will be updated. This page should be reviewed periodically. Material changes will also be noted in the relevant application&#x27;s release notes.</p>
-<h2>9. Disclaimers</h2>
+<h2>11. Disclaimers</h2>
 <p>Each app has its own Disclaimers screen. Those disclaimers are separate and are not part of this privacy policy.</p>
 </body></html>
