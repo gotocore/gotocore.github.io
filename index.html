@@ -85,6 +85,8 @@
 <ul>
 <li>Your settings: albums, groups, pins, hidden albums, sort and filter options, local favorites and tags, widget options, and app lock.</li>
 <li>Thumbnails and an image cache in the app&#x27;s cache.</li>
+<li>SVG thumbnails in the grid are rendered on the phone and cached in Core Gallery&#x27;s private app storage. They are never uploaded.</li>
+<li>Startup and scroll timing, kept only in Core Gallery&#x27;s on-phone diagnostic log. It is never sent anywhere.</li>
 <li>Small preview copies of the photos shown in your home-screen widgets, kept in the app&#x27;s private files folder and marked so other apps&#x27; galleries don&#x27;t list them. They are deleted when you remove the widget.</li>
 <li>The apps you choose for &quot;open with&quot; or editing, so it can open them again next time.</li>
 <li>A crash log, kept in the app&#x27;s private storage (the last 5 crashes). It holds the error trace, the app version, the device model, and the Android version only; file names, paths, and photo locations are removed.</li>
@@ -174,7 +176,8 @@
 <p>---</p>
 <h2>7. Core Notes</h2>
 <p>Core Notes is a notes, calendar, and reminders app for Android: Encrypted Notes, Calendar, &amp; Reminders. It supports text, checklist, photo, drawing, and audio notes, reminders, a calendar, and widgets. No&nbsp;account is required. Everything Core Notes stores is encrypted on the device.</p>
-<p><strong>Pinned-note widget:</strong> if you pin a note to your home screen, the widget shows that note&#x27;s title and first lines while Core Notes is unlocked, so anyone who can see your home screen can read them. The widget stores only the note&#x27;s ID, not its text.</p>
+<p><strong>PDF attachments:</strong> PDFs you attach to a note are copied into Core Notes and stored encrypted on your device, the same way as your notes and images. They are never uploaded. When you export or share an attachment, Core Notes creates a decrypted copy and hands it to the app or location you choose; that copy is no longer protected by Core Notes.</p>
+<p><strong>Crash reports:</strong> if Core Notes crashes, it saves the error trace (no note text) to its private storage and to <code>Download/CoreNotes-crash.txt</code>, and can show it on a startup or lock screen with a Share button. Files in Download can be read by other apps. Nothing is sent unless you share it yourself.</p>
 <h3>No&nbsp;internet</h3>
 <p>Core Notes does not request Android&#x27;s internet permission, so the app cannot connect to the internet. It has no crash-reporting SDK and does not fetch link previews.</p>
 <h3>What stays on your device</h3>
@@ -226,6 +229,7 @@
 <p>---</p>
 <h2>8. Core Utilities</h2>
 <p>Core Utilities is a set of everyday tools that use the phone&#x27;s own sensors and math. No&nbsp;account is required. Every tool works offline except the network tools (Speed Test, Wi-Fi File Share, and the FTP client), which are off until you turn on Network tools in Settings.</p>
+<p><strong>Speed Test log:</strong> when you run Speed Test, Core Utilities saves test details to <code>Download/CoreUtilities-speedtest.txt</code> on your phone to help explain failures. Other apps can read files in Download. It is never uploaded by Core.</p>
 <h3>What stays on your device</h3>
 <ul>
 <li>Your settings and calibration values, in the app&#x27;s private storage. They are removed when you uninstall.</li>
