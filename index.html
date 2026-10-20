@@ -4,7 +4,7 @@
 <p>Go-to Android apps. No&nbsp;third&#8209;party ads. No&nbsp;tracking. No&nbsp;accounts. No&nbsp;AI inside.</p>
 <p><strong>Operator:</strong> Core Products &amp; Services, LLC</p>
 <p><strong>Contact:</strong> gotocorepstx@gmail.com</p>
-<p><strong>Effective date:</strong> October 18, 2026</p>
+<p><strong>Effective date:</strong> October 20, 2026</p>
 <p><strong>Applies to:</strong> Core Weather, Core Music, Core Gallery, Core Workout, Core Sign, Core Notes, Core Utilities, and Trio Live Wallpapers for Android.</p>
 <h2>1. What privacy means</h2>
 <p>Privacy, as used in this policy, refers to the practices Core Products &amp; Services, LLC does not undertake. Beyond the promises above, there are no analytics, no profiles, no cloud, no Core servers, and no social features. Core does not operate an anonymizing service. Encryption is used only where a section below says so: the Core Gallery vault, the Core Sign vault, and everything Core Notes stores. Core Weather, Core Music, Core Utilities, and Google Play purchases are the only things that use the internet, each described in its own section.</p>
@@ -22,7 +22,7 @@
 <p>Core Weather needs the internet. All requests use HTTPS. Every request goes straight from your device to the service, so that service sees your <strong>IP address</strong>. Requests also carry a User-Agent label that names Core Weather.</p>
 <ul>
 <li><strong>Place lookup (when you type a place):</strong> the city or postal code you type is sent as you typed it. We cannot round a typed place name. Services used: Nominatim (OpenStreetMap), Zippopotam.us (5-digit U.S. ZIP codes), and the U.S. Census Geocoder (backup for ZIP codes only). Place search runs only when you search; it is never repeated in the background. By default, place search uses the public OpenStreetMap Nominatim server. In Settings you can enter a different place-search server; if you do, the place you type, or the rounded Detect point, goes to that server instead, under its own terms.</li>
-<li><strong>Detect location (optional):</strong> the app asks Android for your location one time, only when you tap Detect location. Before any network request, it rounds the coordinates to 2 decimal places (about 0.01°, roughly 0.5–1.1 km). The rounded point goes to Nominatim (OpenStreetMap) to find the place name. If no name is found, the place is saved as &quot;Home&quot; with the rounded coordinates. Then Detect location turns itself off. The app keeps the place it found, not a live location.</li>
+<li><strong>Detect location (optional):</strong> the app asks Android for your location one time, only when you tap Detect location. Before any network request, it rounds the coordinates to 1 decimal place (0.1°, roughly 11 km or 7 miles). The rounded point goes to Nominatim (OpenStreetMap) to find the place name. If no name is found, the place is saved as &quot;Home&quot; with the rounded coordinates. Then Detect location turns itself off. The app keeps the place it found, not a live location.</li>
 <li><strong>Forecasts:</strong> rounded coordinates go to MET Norway (the Norwegian Meteorological Institute, api.met.no). MET Norway logs the IP address and the requested coordinates on its servers in Oslo, Norway.</li>
 <li><strong>U.S. observations and severe alerts:</strong> for U.S. places, rounded coordinates also go to the U.S. National Weather Service (api.weather.gov). Outside the U.S., NWS is not contacted.</li>
 <li><strong>Background refresh:</strong> while you have a saved place, Core Weather refreshes about every hour by default. You can change this to every 30 minutes, 1 hour, or 3 hours in Settings. Refreshes run only when you have a network connection. For U.S. places with alerts turned on, a separate alerts-only check runs about every 15 minutes; it does not run when alerts are off. Outside the U.S., background refresh runs only while a Core Weather widget is on your home screen; otherwise the forecast updates when you open the app. Opening the app fetches new data only if the last forecast is more than 10 minutes old. Each refresh sends the saved rounded coordinates to the forecast and alert services above, never your typed place name, and it never repeats a place search. Background refresh never turns on GPS. Widgets redraw from the saved forecast without a network request.</li>
@@ -52,7 +52,7 @@
 </ul>
 <h3>Android backup</h3>
 <p>Android backup is turned on for Core Music. Android Auto Backup can include Music settings, EQ, the library index, ratings, hearts, play counts, the Network Features switches, your trial start date, and your unlock status. It does not include your music files or cached art and waveforms. Google runs that backup, not Core. You can turn it off in Android&#x27;s backup settings.</p>
-<p>Core Music saves the date your 14-day trial started in the app&#x27;s private storage on this device. Android backup and Google Play services Block Store keep a copy for you (end-to-end encrypted in your Google backup only when your device has a screen lock), so clearing data or reinstalling doesn&#x27;t restart the trial as long as your device has a screen lock or Android backup is on. Google runs these, not Core; Core never receives the date.</p>
+<p>Core Music saves the date your 14-day trial started in the app&#x27;s private storage on this device. Android backup and Google Play services Block Store keep a copy for you. Block Store copies it to your Google backup only when Google can end-to-end encrypt it. That way, clearing data or reinstalling usually doesn&#x27;t restart the trial. Google runs these, not Core; Core never receives the date.</p>
 <h3>What leaves your device</h3>
 <p>*A connection is optional. Core Music has two Network Features switches in Settings, Artwork lookup and Lyrics lookup. Both start off, and nothing is looked up until you turn one on. Library and playback work offline. Core Music has no crash-reporting SDK and no update check. Google Play&#x27;s billing library may send its own diagnostic data to Google. Core receives none of it.</p>
 <p>Those lookups work like this:</p>
@@ -110,13 +110,13 @@
 <li>An optional setting, Strip location when sharing, removes location data from photos before you share them. It is off by default and works on photos, not videos.</li>
 </ul>
 <h3>What leaves your device</h3>
-<p>Only what you send yourself. The crash log stays on your device unless you choose to send it: Settings › About › Crash log opens Android&#x27;s share menu with our email address filled in, and nothing is sent unless you finish sending it. When you share, set a wallpaper, or open a photo or video in another app, Android sends that file to the app you pick. That app&#x27;s own privacy policy then applies.</p>
+<p>Only what you send yourself, plus one check: when you first open Core Gallery, Android&#x27;s Google Play Store app confirms your purchase with Google Play. Core Gallery sends nothing itself; Google&#x27;s privacy policy applies to that check. The crash log stays on your device unless you choose to send it: Settings › About › Crash log opens Android&#x27;s share menu with our email address filled in, and nothing is sent unless you finish sending it. When you share, set a wallpaper, or open a photo or video in another app, Android sends that file to the app you pick. That app&#x27;s own privacy policy then applies.</p>
 <ul>
 <li><strong>Vectorize (images only):</strong> sends the picture you chose to Core Utilities on the same device, through Android, so it can be traced there. The first time, Core Gallery explains this before anything is sent. If Core Utilities is not installed, Core Gallery opens its Google Play page instead.</li>
 <li><strong>Choosing a photo for another app:</strong> when another app asks you to pick a photo, Core Gallery returns only the photo you choose to that app.</li>
 </ul>
 <h3>Third parties</h3>
-<p>None are contacted by Core Gallery. Google Play handles the purchase of the app, and Android&#x27;s Google Play Store app checks that purchase.</p>
+<p>Core Gallery contacts no third parties itself. Google Play handles the purchase, and Android&#x27;s Google Play Store app checks it with Google Play when you first open the app.</p>
 <h3>Permissions</h3>
 <ul>
 <li><strong>Photos and videos (all or selected):</strong> to show your library.</li>
@@ -144,7 +144,7 @@
 <li>A crash log of the last 5 crashes, kept in the app&#x27;s private storage: the error trace, the app version, the device model, and the Android version. It stays on the device until you choose to share one.</li>
 <li>This data is kept in the app&#x27;s private storage. Android backup is turned on for Core Workout. Android Auto Backup can include settings, saved workouts, and your trial start date. Google runs that backup, not Core. You can turn it off in Android&#x27;s backup settings.</li>
 </ul>
-<p>Core Workout saves the date your 14-day trial started in the app&#x27;s private storage on this device. Android backup and Google Play services Block Store keep a copy for you (end-to-end encrypted in your Google backup only when your device has a screen lock), so clearing data or reinstalling doesn&#x27;t restart the trial as long as your device has a screen lock or Android backup is on. Google runs these, not Core; Core never receives the date.</p>
+<p>Core Workout saves the date your 14-day trial started in the app&#x27;s private storage on this device. Android backup and Google Play services Block Store keep a copy for you. Block Store copies it to your Google backup only when Google can end-to-end encrypt it. That way, clearing data or reinstalling usually doesn&#x27;t restart the trial. Google runs these, not Core; Core never receives the date.</p>
 <h3>Backup and restore</h3>
 <p>Optional Backup and Restore use Android&#x27;s system save and open sheets. Backup writes a CoreWorkout-backup.json file you choose a location for. Restore reads a file you pick and merges saved workouts by id. Core does not upload that file. A file that is not a Core Workout backup changes nothing.</p>
 <h3>What leaves your device</h3>
@@ -233,7 +233,7 @@
 <li><strong>Calendar (read only):</strong> optional, asked only when you import from your device&#x27;s calendars. Core Notes never edits them.</li>
 <li><strong>Notifications:</strong> asked the first time you set a reminder.</li>
 <li><strong>Alarms &amp; reminders (exact alarms):</strong> optional. Exact times are on by default, but Android honors them only after you allow Alarms &amp; reminders for Core Notes. Without it, alarms, the timer, and reminders may ring up to about 10 minutes late.</li>
-<li><strong>Full-screen alerts:</strong> used only to show alarms and Alarm-style reminders over the lock screen. If full-screen access is off, they show as a regular notification.</li>
+<li><strong>Full-screen alerts (optional, in Settings):</strong> used only so alarms, the timer, reminders, and calendar events can fill the screen when they ring, even when your device is locked. If full-screen access is off, they show as a regular notification.</li>
 <li><strong>Battery optimization exemption:</strong> asked only so alarms and reminders fire on time. Notes works without it.</li>
 <li><strong>Do Not Disturb access:</strong> asked only if you turn on Ring on silent for reminders.</li>
 <li><strong>Foreground service:</strong> keeps an alarm or the timer ringing until you dismiss or snooze it.</li>
@@ -244,10 +244,10 @@
 <li><strong>Not requested:</strong> internet, location, contacts, camera, storage, or writing to your calendars.</li>
 </ul>
 <h3>Purchases</h3>
-<p>Core Notes is free. Encrypted notes, encrypted backups, the quick-note widget, simple in-note reminders, and the Clock (alarms, timer, stopwatch, and world clock) are free. An optional $4.99 one-time unlock through Google Play Billing adds the calendar, repeating and advanced reminders, calendar and .ics import and export, and the Today and Month widgets. No&nbsp;subscription. The unlock is remembered on this device and works offline, and it never locks you out of notes you already have.</p>
+<p>Core Notes is free. Encrypted notes, encrypted backups, the Quick Bar and Quick Box widgets, simple in-note reminders, and the Clock (alarms, timer, stopwatch, and world clock) are free. An optional $4.99 one-time unlock through Google Play Billing adds the calendar, repeating and advanced reminders, calendar and .ics import and export, and the Today and Month widgets. No&nbsp;subscription. The unlock is remembered on this device and works offline, and it never locks you out of notes you already have.</p>
 <p>---</p>
 <h2>8. Core Utilities</h2>
-<p>Core Utilities is a set of everyday tools that use the device&#x27;s own sensors and math. No&nbsp;account is required. Every tool works offline except the network tools (Speed Test, Wi-Fi File Share, and the FTP client), which are off until you turn on Network tools in Settings.</p>
+<p>Core Utilities is a set of everyday tools that use the device&#x27;s own sensors and math. No&nbsp;account is required. After the first launch, every tool works offline except the network tools (Speed Test, Wi-Fi File Share, and the FTP client), which are off until you turn on Network tools in Settings. The first launch needs a connection so Android&#x27;s Google Play Store app can confirm your purchase.</p>
 <p><strong>Speed Test log:</strong> if a Speed Test fails, Core Utilities saves the step that failed and the error details in its private storage on your device to help explain the failure, not in Download or shared folders. It is never uploaded by Core. Core Utilities does not keep your Speed Test results. M-Lab keeps a copy of every test, as described under What leaves your device.</p>
 <h3>What stays on your device</h3>
 <ul>
@@ -264,12 +264,12 @@
 <h3>Network tools (off by default)</h3>
 <p>Turn them on in Settings › Network tools.</p>
 <ul>
-<li><strong>Speed Test:</strong> connects to Measurement Lab (M-Lab) using its open NDT7 test, only when you tap Start test, never in the background. A test runs for a few seconds in each direction, and the data it uses depends on your connection speed and counts toward a mobile data plan. <strong>M-Lab publishes every test result as public open data, including your IP address, the date and time, and the measured speeds.</strong> Core sends no identifier, name or account to M-Lab. If you don&#x27;t want your IP address published, don&#x27;t run Speed Test. M-Lab&#x27;s privacy policy (<a href="https://www.measurementlab.net/privacy/">https://www.measurementlab.net/privacy/</a>) applies to that connection.</li>
+<li><strong>Speed Test:</strong> connects to Measurement Lab (M-Lab) using its open NDT7 test, only when you tap Start test, never in the background. A test runs for a few seconds in each direction, and the data it uses depends on your connection speed and counts toward a mobile data plan. <strong>M-Lab publishes every test result as public open data, including your IP address, the date and time, and the measured speeds.</strong> Core sends no identifier, name or account to M-Lab. If you don&#x27;t want your IP address published, don&#x27;t run Speed Test. M-Lab&#x27;s privacy policy (<a href="https://www.measurementlab.net/privacy/">https://www.measurementlab.net/privacy/</a>) applies to that connection. M-Lab&#x27;s policy doesn&#x27;t allow people under 16 to use its speed test, so Core Utilities is meant for ages 16 and up.</li>
 <li><strong>Wi-Fi File Share:</strong> serves files only to devices on your Wi-Fi, never through Core or the internet. While sharing is on, the app shows your device&#x27;s local IP address, port, user name, and a one-time password, and anyone on the same Wi-Fi who has that password can open the folder you chose to share. SFTP is the default and is encrypted. Plain FTP is available only if you turn it on, and it is not encrypted: file names, files, and the password travel in readable form on your Wi-Fi. Sharing stops when you tap Stop, after 15 minutes without use, or when Wi-Fi drops. Use trusted networks.</li>
 <li><strong>FTP client:</strong> connects only to servers you add, using SFTP (encrypted) by default. Plain FTP is available only if you choose it, and it is not encrypted. Core never sees your servers, files, or passwords.</li>
 </ul>
 <h3>Third parties</h3>
-<p>Measurement Lab (M-Lab), only when you run Speed Test. The FTP client connects only to servers you choose yourself. Android&#x27;s Google Play Store app checks your purchase. No&nbsp;other third parties are contacted.</p>
+<p>Measurement Lab (M-Lab), only when you run Speed Test. The FTP client connects only to servers you choose yourself. Android&#x27;s Google Play Store app confirms your purchase with Google Play when you first open the app, and again after the confirmation expires. Core Utilities contacts no other third parties.</p>
 <h3>Permissions</h3>
 <ul>
 <li><strong>Internet and network state:</strong> used only for Speed Test, Wi-Fi File Share, and the FTP client, and only after you turn on Network tools.</li>
@@ -288,7 +288,7 @@
 <h2>9. Purchases in all Core apps</h2>
 <p>Every Core purchase is completed or facilitated through Google Play. Google Play processes the payment and decides refunds. Core does not receive your card details, and Core does not issue a separate license you can hand to another person. Prices are in U.S. dollars and are shown on Google Play before you buy.</p>
 <h2>10. Children</h2>
-<p>Core apps are general-audience utilities. They are not made for children, and they have no accounts, profiles, chat, or social features. Core does not knowingly collect personal information from children. If you think a child has sent us personal information, for example in an email, contact us and we will delete it.</p>
+<p>Core apps are general-audience utilities. They are not made for children, and they have no accounts, profiles, chat, or social features. Core does not knowingly collect personal information from children. Core Utilities is meant for ages 16 and up because of the M-Lab speed test. If you think a child has sent us personal information, for example in an email, contact us and we will delete it.</p>
 <h2>11. Your choices</h2>
 <ul>
 <li><strong>Weather:</strong> type a place instead of using Detect location, turn off location permission, or turn off alerts and notifications.</li>
@@ -318,13 +318,14 @@
 <li>The file you pick is copied; your original is never changed. Saved wallpapers go to <code>Pictures/Trio Live Wallpapers</code>, where your gallery app can see them. Copies in Pictures stay after you uninstall Trio unless you delete them.</li>
 <li>Hidden Mode keeps saved wallpapers in Trio&#x27;s private storage instead: they don&#x27;t show in other apps, and they&#x27;re deleted if you uninstall Trio.</li>
 <li>Slideshow folders you pick are read in place and never copied.</li>
+<li>Deleting a wallpaper in Trio deletes the file, including files in a folder you picked, after you confirm.</li>
 <li>A crash log of the last 5 crashes, kept in the app&#x27;s private storage: the error trace, the app version, the device model, and the Android version. It never includes file names, paths, pictures, or location.</li>
 <li>Android backup is turned off for Trio Live Wallpapers.</li>
 </ul>
 <h3>What leaves your device</h3>
-<p>Only what you send yourself. The crash log is never sent automatically. Settings › About › Crash log opens Android&#x27;s share menu with our email address filled in, and nothing is sent unless you finish sending it.</p>
+<p>Only what you send yourself, plus one check: the first time you open Trio, Android&#x27;s Google Play Store app confirms your purchase with Google Play. Trio sends nothing itself. The crash log is never sent automatically. Settings › About › Crash log opens Android&#x27;s share menu with our email address filled in, and nothing is sent unless you finish sending it.</p>
 <h3>Third parties</h3>
-<p>None are contacted by Trio Live Wallpapers. Android&#x27;s Google Play Store app checks the purchase. No&nbsp;third&#8209;party ads. No&nbsp;analytics. No&nbsp;tracking.</p>
+<p>Trio Live Wallpapers contacts no third parties itself. Android&#x27;s Google Play Store app checks the purchase with Google Play. No&nbsp;third&#8209;party ads. No&nbsp;analytics. No&nbsp;tracking.</p>
 <h3>Permissions</h3>
 <ul>
 <li><strong>Set wallpaper:</strong> to set your live wallpaper.</li>
